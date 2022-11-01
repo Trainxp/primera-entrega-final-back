@@ -1,0 +1,18 @@
+[
+   {
+      "timestamp": "11/1/2022",
+      "productos": [
+         {
+            "title": "rx5800",
+            "price": "15000",
+            "thumbnail": "amd.jpf",
+            "stock": "15",
+            "code": "mil8t",
+            "description": "placa de video",
+            "timestamp": "11/1/2022",
+            "id": 3
+         }
+      ],
+      "id": 1
+   }
+]

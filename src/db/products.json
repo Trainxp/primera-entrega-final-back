@@ -1,0 +1,22 @@
+[
+   {
+      "title": "playstation 155",
+      "price": "4000",
+      "thumbnail": "ps4.jpg",
+      "stock": "10",
+      "code": "k-24",
+      "description": "consola de videojuegos",
+      "timestamp": "11/1/2022",
+      "id": 1
+   },
+   {
+      "title": "rx5800",
+      "price": "15000",
+      "thumbnail": "amd.jpf",
+      "stock": "15",
+      "code": "mil8t",
+      "description": "placa de video",
+      "timestamp": "11/1/2022",
+      "id": 3
+   }
+]
