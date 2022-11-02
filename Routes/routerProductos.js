@@ -39,20 +39,20 @@ routerProductos.post("/",verifyRole ,async (req, res) => {
 })
 
 
-routerProductos.put('/:id', (req, res) => {
+routerProductos.put('/:id',verifyRole, async (req, res) => {
     const{id}=req.params
-    const {title,price,thumbnail} =req.body
-    if (title&&price&&thumbnail) {
-        // const producto = ApiProductos.put( id, {title,price,thumbnail}) 
+    const {title,price,thumbnail, code, description,stock } =req.body
+    if (title&&price&&thumbnail&&code&&description&&stock) {
+        const producto = await Productos.updateById( id, {title,price,thumbnail}) 
         res.send({ id:producto, "mensaje" : "se cambio el producto " })
     } else {
         res.json({"mensaje" : "producto mal ingresado " })
     }
 })
 
-routerProductos.delete("/:id", (req,res)=> {
+routerProductos.delete("/:id",verifyRole, async(req,res)=> {
     const{id}=req.params
-    // const producto = ApiProductos.deleteById(id)
+    const producto = await Productos.deleteById(id)
     if (!producto) {
         res.json(producto)      
     } else {

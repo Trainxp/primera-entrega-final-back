@@ -4,6 +4,32 @@ import { carrito, Productos } from "../src/Dao/index.js";
 const routerCart = Router()
 
 
+routerCart.get("/:Id",async (req,res)=>{
+
+    const {carritoId} = req.params;
+
+    const cart =  await carrito.getById(Number(carritoId))
+    if(!cart) return res.send("Error, no existe carrito")
+
+    res.send({carrito:cart})
+
+}  )
+
+
+routerCart.delete("/:carritoId",async (req,res)=>{
+   
+        
+        const {carritoId} = req.params;
+
+    const cart =  await carrito.getById(Number(carritoId))
+    if(!cart) return res.send("Error, no existe carrito")
+    const cartEliminado = await cart.deleteAll()
+    res.send({ mensaje:"carrito eliminado" ,  carrito:cartEliminado})
+        
+}  )
+
+
+
 routerCart.post("/",  async (req,res)=>{
     const Firstcart={timestamp : new Date().toLocaleDateString(),productos:[] }
     const cart= await carrito.save(Firstcart);
