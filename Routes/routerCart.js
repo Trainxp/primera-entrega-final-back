@@ -23,8 +23,9 @@ routerCart.delete("/:carritoId",async (req,res)=>{
 
     const cart =  await carrito.getById(Number(carritoId))
     if(!cart) return res.send("Error, no existe carrito")
-    const cartEliminado = await cart.deleteAll()
-    res.send({ mensaje:"carrito eliminado" ,  carrito:cartEliminado})
+    const Carteliminado =  await carrito.deleteById(carritoId)
+
+    res.send({Carteliminado, mensaje:"carrito eliminado"})
         
 }  )
 
