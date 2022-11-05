@@ -1,22 +1,72 @@
 [
    {
-      "title": "playstation 155",
-      "price": "4000",
-      "thumbnail": "ps4.jpg",
-      "stock": "10",
-      "code": "k-24",
-      "description": "consola de videojuegos",
-      "timestamp": "11/1/2022",
+      "title": "gtx 590",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
+      "description": "placa de video",
+      "timestamp": "11/4/2022",
       "id": 1
    },
    {
-      "title": "rx5800",
-      "price": "15000",
-      "thumbnail": "amd.jpf",
-      "stock": "15",
-      "code": "mil8t",
+      "title": "amd rx 8500",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
       "description": "placa de video",
-      "timestamp": "11/1/2022",
+      "timestamp": "11/4/2022",
+      "id": 2
+   },
+   {
+      "title": "amd rx 8500",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
+      "description": "placa de video",
+      "timestamp": "11/4/2022",
       "id": 3
+   },
+   {
+      "title": "amd rx 8500",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
+      "description": "placa de video",
+      "timestamp": "11/4/2022",
+      "id": 6
+   },
+   {
+      "title": "amd rx 8500",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
+      "description": "placa de video",
+      "timestamp": "11/4/2022",
+      "id": 7
+   },
+   {
+      "title": "gtx 580",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
+      "description": "placa de video",
+      "timestamp": "11/4/2022",
+      "id": 8
+   },
+   {
+      "title": "amd rx 8500",
+      "price": "1000",
+      "thumbnail": "amd.jpg",
+      "stock": "500",
+      "code": "gtr-r35",
+      "description": "placa de video",
+      "timestamp": "11/4/2022",
+      "id": 9
    }
 ]
